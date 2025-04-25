@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TCM - Python 201 For Hackers</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .drive-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+<nav class="wrapper">
+<i class="fa-solid fa-angle-left arrow" id="left"></i>
+<ul class="carousel">
+<!-- Navigation items will be inserted here -->
+<li class="card"><a href="index.html">1. Introduction</a></li>
+<li class="card"><a href="s2.html">2. Python 201</a></li>
+<li class="card"><a href="s3.html">3. Object Oriented Programming</a></li>
+<li class="card" id="actuel"><a href="s4.html">4. The Windows API</a></li>
+<li class="card"><a href="s5.html">5. Extending Python</a></li>
+<li class="card"><a href="s6.html">6. Python Projects</a></li>
+<li class="card"><a href="s7.html">7. Extending Burp</a></li>
+<li class="card"><a href="s8.html">8. Debugging</a></li>
+<li class="card"><a href="s9.html">9. Closing</a></li></ul>
+<i class="fa-solid fa-angle-right arrow" id="right"></i>
+</nav>
+</header>
+<!-- Navigation buttons -->
+<button class="arrow-button" id="left-arrow" onclick="navigate('s3.html')">←</button>
+<button class="arrow-button" id="right-arrow" onclick="navigate('s5.html')">→</button>
+<main>
+<!-- Video sections will be inserted here -->
+
+<section class="section" id="section13">
+<h2 class="video-title">14. Introduction</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/19rNycdoY3q9ICo_Ci32oFzt4zedi3MmY/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 0)">Previous Video</button>
+<button onclick="navigateToSection('next', 0)">Next Video</button>
+<textarea class="notes-input" id="notes13" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section14">
+<h2 class="video-title">15. C Data Types and Structures</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1A2Lu6AJvErF7TFkh2LtaY-bt_2EGlQb6/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 1)">Previous Video</button>
+<button onclick="navigateToSection('next', 1)">Next Video</button>
+<textarea class="notes-input" id="notes14" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section15">
+<h2 class="video-title">16. Interfacing with the Windows API</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/19nMJxrbt3dohJMx7AdKOAT4N70namcvt/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 2)">Previous Video</button>
+<button onclick="navigateToSection('next', 2)">Next Video</button>
+<textarea class="notes-input" id="notes15" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section16">
+<h2 class="video-title">17. Undocumented API Calls</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/19xfZGHPwEcLc3ytR2XfCNetXSVdZ5dhk/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 3)">Previous Video</button>
+<button onclick="navigateToSection('next', 3)">Next Video</button>
+<textarea class="notes-input" id="notes16" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section17">
+<h2 class="video-title">18. Direct Syscalls</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/19wUwSzrb5mgU_kd3y0VLcnptEtguu_md/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 4)">Previous Video</button>
+<button onclick="navigateToSection('next', 4)">Next Video</button>
+<textarea class="notes-input" id="notes17" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section18">
+<h2 class="video-title">19. Execution from a DLL</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1A1bQU4DPIT8D1xM-dcCbVf_e8_sZThMl/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 5)">Previous Video</button>
+<button onclick="navigateToSection('next', 5)">Next Video</button>
+<textarea class="notes-input" id="notes18" placeholder="Write your notes here..."></textarea>
+</section>
+</main>
+<!-- Footer elements -->
+<div class="footer-buttons">
+<button id="backToTop" style="display: none;">
+<i class="fas fa-arrow-up"></i>
+</button>
+<button id="exportButton">
+<i class="fas fa-file-export"></i>
+</button>
+<input accept=".json" id="importButton" type="file"/>
+<button id="importDataButton">
+<i class="fas fa-file-import"></i>
+</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

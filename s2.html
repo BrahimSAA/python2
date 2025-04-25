@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TCM - Python 201 For Hackers</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .drive-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+<nav class="wrapper">
+<i class="fa-solid fa-angle-left arrow" id="left"></i>
+<ul class="carousel">
+<!-- Navigation items will be inserted here -->
+<li class="card"><a href="index.html">1. Introduction</a></li>
+<li class="card" id="actuel"><a href="s2.html">2. Python 201</a></li>
+<li class="card"><a href="s3.html">3. Object Oriented Programming</a></li>
+<li class="card"><a href="s4.html">4. The Windows API</a></li>
+<li class="card"><a href="s5.html">5. Extending Python</a></li>
+<li class="card"><a href="s6.html">6. Python Projects</a></li>
+<li class="card"><a href="s7.html">7. Extending Burp</a></li>
+<li class="card"><a href="s8.html">8. Debugging</a></li>
+<li class="card"><a href="s9.html">9. Closing</a></li></ul>
+<i class="fa-solid fa-angle-right arrow" id="right"></i>
+</nav>
+</header>
+<!-- Navigation buttons -->
+<button class="arrow-button" id="left-arrow" onclick="navigate('index.html')">←</button>
+<button class="arrow-button" id="right-arrow" onclick="navigate('s3.html')">→</button>
+<main>
+<!-- Video sections will be inserted here -->
+
+<section class="section" id="section2">
+<h2 class="video-title">3. Decorators</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1CQJ-eeR7RskHGIb1GNmbUEuC18rm9L4C/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 0)">Previous Video</button>
+<button onclick="navigateToSection('next', 0)">Next Video</button>
+<textarea class="notes-input" id="notes2" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section3">
+<h2 class="video-title">4. Generators</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1CNtHrxm0a0sOSds11J5t5VbXK7J7oAmX/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 1)">Previous Video</button>
+<button onclick="navigateToSection('next', 1)">Next Video</button>
+<textarea class="notes-input" id="notes3" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section4">
+<h2 class="video-title">5. Serialization</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1CPSSdWXt66yTl5e1k5Slh63ixddk9FZ1/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 2)">Previous Video</button>
+<button onclick="navigateToSection('next', 2)">Next Video</button>
+<textarea class="notes-input" id="notes4" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section5">
+<h2 class="video-title">6. Closures</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1CGh8WB3VHdgOIB8eBphyn3C9Xm3RlwLb/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 3)">Previous Video</button>
+<button onclick="navigateToSection('next', 3)">Next Video</button>
+<textarea class="notes-input" id="notes5" placeholder="Write your notes here..."></textarea>
+</section>
+</main>
+<!-- Footer elements -->
+<div class="footer-buttons">
+<button id="backToTop" style="display: none;">
+<i class="fas fa-arrow-up"></i>
+</button>
+<button id="exportButton">
+<i class="fas fa-file-export"></i>
+</button>
+<input accept=".json" id="importButton" type="file"/>
+<button id="importDataButton">
+<i class="fas fa-file-import"></i>
+</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
