@@ -37,6 +37,9 @@
 <li class="card"><a href="s9.html">9. Closing</a></li></ul>
 <i class="fa-solid fa-angle-right arrow" id="right"></i>
 </nav>
+<a class="home-button" href="https://brahimsaa.github.io/all">
+<i class="fa-solid fa-home"></i>
+</a>
 </header>
 <!-- Navigation buttons -->
 <button class="arrow-button" id="right-arrow" onclick="navigate('s2.html')">→</button>
@@ -49,11 +52,51 @@
 <iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1CWyc7cOrA849yK6KOwJ2XemXm4JbQdsZ/preview">
 </iframe>
 </div>
-<button class="complete-btn">Mark as Complete</button>
-<button class="unmark-btn">Unmark</button>
-<button onclick="navigateToSection('prev', 0)">Previous Video</button>
-<button onclick="navigateToSection('next', 0)">Next Video</button>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 0)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 0)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
 <textarea class="notes-input" id="notes1" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section2">
+<h2 class="video-title">2. Setup on Windows</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1CagwqF7B6sMRbOVCiZPx1QIj_g-32En1/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 1)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 1)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes2" placeholder="Write your notes here..."></textarea>
 </section>
 </main>
 <!-- Footer elements -->
